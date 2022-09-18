@@ -1,0 +1,196 @@
+body {
+    /* 1- Primeira parte*/
+    background-image: url(./Background/Fundo.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+
+
+/* 3- Terceira parte*/
+/* border: 1px solid red*/
+/* feito para verificar as linhas das bordas*/
+
+
+
+
+main {
+
+    display: grid;
+    gap: 24px;
+
+    /* 2- Segunda parte */
+    max-width: 580px;
+    width: 90%;
+    margin: 32% auto
+}
+
+                            /*Reset do CSS onde iremos retirar alguns elementos do HTML*/
+
+* {
+    /*usado para retirar os espaços das caixas*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+ul {
+    /*Retirar os pontos gerados pela lista HTML*/
+    list-style: none;
+}
+
+                    /*Customização da fonte. ( Vamos ao fígma verificar a tipografia "Typography"*/
+
+body * {
+
+    font-family: "inter", sans-serif;
+    line-height: 160%;
+
+}
+
+section {
+
+    color: white;
+
+
+}
+
+section h2 {
+
+    /*Configuração gerada automaticamente pelo navegador*/
+    /*font-weight: 900;*/
+    /*font-size: 24px;*/
+    letter-spacing: -0.47px;
+}
+
+section p {
+
+
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
+}
+
+                                            /*CSS display*/
+/* Depois de ter colocado o display em flex eu garanto todas as minhas <LI> fiquem uma ao lado da outra*/
+
+section ul {
+
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.Games-list img {
+    border-radius: 8px;
+    width: 90px;
+}
+
+.channel-list img {
+
+    border-radius: 50%;
+    width: 70px;
+    border: 1px solid #443E54
+
+
+}
+
+                                    /*Ajustes finais nas Sections*/
+
+section div {
+
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+
+section {
+
+    background-image: linear-gradient(90deg, #9572fc 0%, #43e7ad 50.52%, #e2d45c 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+}
+
+main {
+
+    margin-top: 32px;
+}
+
+ul {
+
+    flex-wrap: wrap;
+    /*opação para jogar as imagem para baixo da caixa quando não couber mais */
+}
+
+                                    /*Configurando o HEADER*/
+
+header img {
+
+    width: 100%;
+    border-radius: 50%;
+
+
+}
+
+header {
+
+    text-align: center;
+    padding-top: 32px;
+}
+
+header div {
+
+    border-radius: 50%;
+    background-image: linear-gradient(90deg, #9572fc 0%, #43e7ad 50.52%, #e2d45c 100%);
+    width: 120px;
+    display: flex;
+    padding: 4px;
+    margin: auto
+    
+
+}
+
+                                        /*CSS TRANSIÇÃO*/
+
+header div:hover{
+
+    transform: scale(1.1);
+
+}
+
+header div{
+    transition: transform .3s;
+}
+
+section ul li:hover{
+
+    transform:scale(1.1)
+}
+section ul li{
+    transition: transform .3s;
+
+}
+
+                                    /*CSS EFEITOS DE ANIMAÇÃO
+
+@keyframs frombottom{
+
+    from{
+        opacity: 0;
+        transform: translateY(30px)
+
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0)
+
+    }
+}
+
+main section{
+
+    animation: frombottom .7s;
+} */
